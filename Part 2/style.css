@@ -1,74 +1,101 @@
 header {
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
 h2 {
-
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 2px 0 2px;
 }
 
 .nav {
-
-
-  }
-
-  li {
-
-
-  }
-
-  .content{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
 }
 
-  .aside {
+li {
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 4px;
+  justify-content: center;
+  margin: 4px;
+}
 
-  }
+.content{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
 
-  .slidebox{
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+  border: 1px solid black;
+}
 
-   
-  }
+.slidebox {
+  display: flex;
+  flex: 0;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
 
-  .article{
-
-  }
-
+.article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .poem{
-
+  display: flex;
+  border: 1px solid black;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
-  @media (min-width:600px) and (max-width: 990px)  {
-    .article {
+@media (min-width:600px) and (max-width: 990px)  {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
 
-  } 
-header{
-
-}
+  header{
+    display: none;
+  }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
-header,.content{
+  header, .content{
+    display: none;
+  }
 
-}
-
-.nav {
-
-
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
   }
 
 
-.nav > li {
-
-}
-
+  .nav > li {
+    display: flex;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 }
 
